@@ -9,16 +9,18 @@ using namespace std;
 class day{
 	protected:
 		double init_b;//initial budget
-		int d[3];//dd-mm-yy
 		double cur_b;//current budget
+		double added;//added values
+		double spent;//spent values
+		string date;
 	public:
 		//need to get system date
 		day();
 		day(double);//init_b;
-		double diff();
-		int* get_day();
+		double add();
+		double pull();
 };
-
+/*
 class week:public day{
 	protected:
 		vector<int*>w;//container of date
@@ -34,5 +36,5 @@ class month:public week(){
 		month(int**);
 		int** get_month();
 };
-
+*/
 #endif
