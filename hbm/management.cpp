@@ -10,6 +10,14 @@ day::day(double b):init_b(b), cur_b(b){
 	date = dt.get_time();
 }
 
-double day::pull(){
-	return 
+double day::add(double x){
+	cur_b += x;
+}
+
+double day::diff(double x){
+	cur_b -= x;
+}
+
+double day::get(){
+	return cur_b;
 }

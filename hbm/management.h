@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include<vector>
+#include<Date.h>
 
 using namespace std;
 
@@ -10,15 +11,14 @@ class day{
 	protected:
 		double init_b;//initial budget
 		double cur_b;//current budget
-		double added;//added values
-		double spent;//spent values
 		string date;
 	public:
 		//need to get system date
 		day();
 		day(double);//init_b;
-		double add();
-		double pull();
+		double add(double x);
+		double diff(double xi);
+		double get();
 };
 /*
 class week:public day{
