@@ -1,5 +1,5 @@
 class Punct:
-    def _init_(self,a,b):
+    def __init__(self,a,b):
         self.x = a
         self.y = b
 
